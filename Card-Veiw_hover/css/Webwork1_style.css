@@ -1,0 +1,225 @@
+body{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url(images/img1.jpg);
+	background-size: cover;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+
+}
+
+.card{
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 200px 200px 80px;
+	grid-template-areas: "head" "form" "stats";
+
+	font-family: Roboto;
+	border-radius: 18px;
+	background:white;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+	text-align: center;
+	transition: 0.5s ease;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.card-heading{
+	grid-area: head;
+	font-family: Roboto;
+	color: black;
+	background:url(images/card-back1.jpg);
+	background-size: cover;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.card-form{
+	grid-area: form;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+
+.card-stats{
+	grid-area: stats;
+	padding-top: 30px;
+	font-style: "Roboto" sans-serif;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px; 
+	background-color: #e01be3;
+	background-size: cover;
+	font-size:40;
+}
+.card:hover {
+	transform: scale(1.2);
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.card2{
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 200px 200px 80px;
+	grid-template-areas: "head" "form" "stats";
+
+	font-family: Roboto;
+	border-radius: 18px;
+	background:white;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+	text-align: center;
+	transition: 0.5s ease;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.card-heading2{
+	grid-area: head;
+	font-family: Roboto;
+	color: black;
+	background:url(images/card-back2.jpg);
+	background-size: cover;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.card-form2{
+	grid-area: form;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	
+}
+.card-stats2{
+	grid-area: stats;
+	padding-top: 30px;
+	font-style: "Roboto" sans-serif;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px; 
+	background-color: #e69c15;
+	background-size: cover;
+	font-size:40;
+}
+.card2:hover {
+	transform: scale(1.2);
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card3{
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 200px 200px 80px;
+	grid-template-areas: "head" "form" "stats";
+
+	font-family: Roboto;
+	border-radius: 18px;
+	background:white;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+	text-align: center;
+	transition: 0.5s ease;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.card-heading3{
+	grid-area: head;
+	font-family: Roboto;
+	color: black;
+	background:url(images/card-back3.jpg);
+	background-size: cover;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.card-form3{
+	grid-area: form;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	
+}
+.card-stats3{
+	grid-area: stats;
+	padding-top: 30px;
+	font-style: "Roboto" sans-serif;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px; 
+	background-color: green;
+	background-size: cover;
+	font-size:40;
+}
+.card3:hover{
+	transform: scale(1.2);
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+@media (max-width: 991px)
+{
+	.card
+{
+	
+	grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+	grid-template-rows: minmax(auto,auto);
+	
+
+}
+.card-heading
+{
+	grid-column: unset !important;
+	grid-row: unset !important;
+}
+}
+
+.Apply
+{
+	
+	border: none;
+  	color: white;
+  	cursor: pointer;
+  	padding: 10px 12px;
+  	font-size: 16px;
+}
+
+#er
+{
+	background-color: #E01BE3;
+}
+#mr{
+	background-color: #E69C15;
+}
+
+#sn
+{
+	background-color: #008000;
+}
+
+.Pid
+{
+	border: none;
+	border-bottom: 2px solid #262626;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	background: transparent;
+	font-size: 16px;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.Pid:hover
+{
+
+	color: #42F3FA;
+	border: 1px solid #42F3FA;
+	box-shadow: 0 0 5px rgba(0,255,0,.3),
+				0 0 10px rgba(0,255,0,.2),
+				0 0 15px rgba(0,255,0,.1),
+				0 2px 0 black;
+}
+
